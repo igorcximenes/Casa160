@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.navbar {
+    padding: 0.5rem;
+}
+
+.offcanvas-header{
+    background-color: #262626;
+}
+
+.offcanvas-body {
+    background-color: #262626;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+
+.navbar-toggler:focus ,btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+li .nav-link{
+    color: rgb(209, 209, 209);
+    font-weight: 500;
+    position: relative;
+}
+li .nav-link:hover{
+    color: rgb(255, 255, 255);
+}
+
+nav {
+    background-color:  #262626;
+}
+
+@media (min-width:991px){
+    .nav-link::before {
+        content:"";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: white;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+
+}
+
+.nav-link:hover::before, .nav-link.active::before {
+    width: 100%;
+    visibility: visible;
+}
+}
+
+@media (max-width: 768px) { 
+    .row {
+        gap: 20px; /* Aumenta o espaço entre as colunas em telas menores */
+    }
+
+    .img-lateral {
+        max-width: 80%; /* Reduz o tamanho das imagens laterais */
+        margin: 0 auto; /* Centraliza as imagens */
+    }
+}
+
+.img-lateral {
+    width: 120%; /* Aumenta a largura da imagem */
+    height: auto; /* Mantém a altura ajustável */
+    object-fit: cover; /* Garante que a imagem não distorça */
+}
+
+@media (min-width: 768px) { 
+    .img-lateral {
+        width: 130%; /* Aumenta a largura em telas maiores */
+        max-width: none; /* Remove limite de largura */
+    }
+}
+
+ .video-container {
+    display: flex;
+    justify-content: center; /* Centraliza na horizontal */
+    align-items: center; /* Centraliza na vertical */
+    height: 100vh; /* Faz a div ocupar toda a tela */
+}
+
+.tittle-video {
+    margin-top: 30px;
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 10px; 
+}
+
+.video {
+    padding: 70px;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Alinha ao centro */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+    /* Ajustar tamanho do carrossel */
+    #videoCarousel {
+        max-width: 70%; /* Reduz o tamanho do carrossel */
+        margin: auto; /* Centraliza na tela */
+    }
+
+    /* Ajustar tamanho dos vídeos */
+    .carousel-inner .ratio {
+        max-width: 80%; /* Ajusta a largura do vídeo */
+        margin: auto; /* Centraliza */
+    }
+
+    /* Diminuir tamanho das setas */
+    .carousel-control-prev-icon, 
+    .carousel-control-next-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* Aumentar o espaço entre o carrossel e o footer */
+    .container.mt-3 {
+        margin-bottom: 50px; /* Aumenta o espaço abaixo do carrossel */
+    }
+
+    h1.text-center {
+        font-size: 25px;
+        background-color: #d3d3d3; /* Cor de fundo cinza */
+        padding: 5px 15px; /* Espaçamento interno */
+        border-radius: 5px; /* Borda arredondada */
+        display: inline-block; /* Faz com que o fundo siga apenas o tamanho do texto */
+        transition: background-color 0.3s ease, color 0.3s ease; /* Suaviza a transição */
+    }
+
+    /* Efeito Hover */
+    h1.text-center:hover {
+        background-color: #a9a9a9; /* Cinza mais escuro no hover */
+        color: white; /* Texto branco no hover */
+        cursor: pointer; /* Indica interatividade */
+    }

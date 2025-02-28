@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    border-radius: 16px;
+    height: 80px;
+    margin: 20px;
+    padding: 0.5rem;
+}
+
+.offcanvas-header{
+    background-color: #262626;
+}
+
+.offcanvas-body {
+    background-color: #262626;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+
+.navbar-toggler:focus ,btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+li .nav-link{
+    color: rgb(209, 209, 209);
+    font-weight: 500;
+    position: relative;
+}
+li .nav-link:hover{
+    color: rgb(255, 255, 255);
+}
+
+nav {
+    background-color:  #262626;
+}
+
+@media (min-width:991px){
+    .nav-link::before {
+        content:"";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: white;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+
+}
+
+.nav-link:hover::before, .nav-link.active::before {
+    width: 100%;
+    visibility: visible;
+}
+}
+
