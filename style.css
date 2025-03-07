@@ -5,6 +5,12 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 
 .navbar {
     padding: 0.5rem;
@@ -151,3 +157,24 @@ nav {
         color: white; /* Texto branco no hover */
         cursor: pointer; /* Indica interatividade */
     }
+
+    /* Estiliza o footer para ficar fixo no final */
+footer {
+    width: 100%;
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+}
+
+.content {
+    flex: 1;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Mantém a altura mínima da tela */
+}
