@@ -9,15 +9,12 @@
     
 }
 
-body, html {
+body {
+    height: 100%;
     margin: 0;
     padding: 0;
-    width: 100%;
-    overflow-x: hidden; /* Evita scroll horizontal desnecessário */
+
 }
-
-
-/* INICIO HEADER */
 
 /* Fundo preto e letras brancas no dropdown */
 .dropdown-menu {
@@ -29,7 +26,7 @@ body, html {
 /* Cor das letras brancas nos itens do dropdown */
 .dropdown-menu .dropdown-item {
     color: white !important;
-    font-size: 12px; /* Mantém o tamanho da fonte igual ao da navbar */
+    font-size: 15px; /* Mantém o tamanho da fonte igual ao da navbar */
     font-family:"Roboto", Geneva, Tahoma, sans-serif;
     font-weight: lighter;
 
@@ -98,6 +95,7 @@ nav {
 }
 }
 
+
 /* Reduzindo tamanho da fonte do menu */
 .navbar-nav .nav-link {
     font-size: 14px; /* Diminui o tamanho da fonte */
@@ -132,91 +130,3 @@ nav {
 .dropdown-menu .dropdown-item:hover {
     background-color: #222; /* Tom mais escuro ao passar o mouse */
 }
-
-/* TERMINO DO HEADER  */
-
-
-/* VIDEO ABAIXO DO HEADER */
-
-
-  /* Seção do vídeo ocupando 40% da tela */
-  .video-section {
-    position: relative;
-    width: 100%;
-    height: 70vh; /* 70% da altura da tela */
-    background: black; /* Fundo preto */
-    overflow: hidden;
-}
-
-/* Vídeo ajustado à tela */
-.video-section video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: .4; /* 50% de opacidade */
-}
-
-/* Texto sobreposto */
-.video-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-@media (max-width: 768px) { 
-    .row {
-        gap: 20px; /* Aumenta o espaço entre as colunas em telas menores */
-    }
-
-    .img-lateral {
-        max-width: 80%; /* Reduz o tamanho das imagens laterais */
-        margin: 0 auto; /* Centraliza as imagens */
-    }
-}
-
-.img-lateral {
-    width: 120%; /* Aumenta a largura da imagem */
-    height: auto; /* Mantém a altura ajustável */
-    object-fit: cover; /* Garante que a imagem não distorça */
-}
-
-@media (min-width: 768px) { 
-    .img-lateral {
-        width: 130%; /* Aumenta a largura em telas maiores */
-        max-width: none; /* Remove limite de largura */
-    }
-}
-
-/* botao do primeiro carroussel */
-
-
-
-    h1#text-1 {
-        font-size: 25px;
-        background-color: #00ce33; /* Cor de fundo cinza */
-        padding: 5px 15px; /* Espaçamento interno */
-        color: white;
-        display: inline-block; /* Faz com que o fundo siga apenas o tamanho do texto */
-        transition: background-color 0.3s ease, color 0.3s ease; /* Suaviza a transição */
-    }
-       /* Efeito Hover */
-       h1#text-1:hover {
-        background-color: #009420; /* Cinza mais escuro no hover */
-        color: white; /* Texto branco no hover */
-    }
-
-    /* footer style */
-
