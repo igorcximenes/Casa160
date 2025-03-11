@@ -110,11 +110,11 @@
                                                 </div>
                                             </div>
                                             <!-- Botão "Prev" centralizado com maior opacidade -->
-                                            <button class="carousel-control-prev position-absolute" type="button" data-bs-target="#carouselExample" data-bs-slide="prev" style="background-color: rgba(0, 255, 0, 0.4); border-radius: 50%; border: none; width: 40px; height: 40px; top: 50%; transform: translateY(-50%); left: 10px;">
+                                            <button class="carousel-control-prev position-absolute" type="button" data-bs-target="#carouselExample" data-bs-slide="prev" style="background-color: rgba(122, 255, 122, 0.4); border-radius: 50%; border: none; width: 40px; height: 40px; top: 50%; transform: translateY(-50%); left: 10px;">
                                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                             </button>
                                             <!-- Botão "Next" centralizado com maior opacidade -->
-                                            <button class="carousel-control-next position-absolute" type="button" data-bs-target="#carouselExample" data-bs-slide="next" style="background-color: rgba(0, 255, 0, 0.4); border-radius: 50%; border: none; width: 40px; height: 40px; top: 50%; transform: translateY(-50%); right: 10px;">
+                                            <button class="carousel-control-next position-absolute" type="button" data-bs-target="#carouselExample" data-bs-slide="next" style="background-color: rgba(122, 255, 122, 0.4); border-radius: 50%; border: none; width: 40px; height: 40px; top: 50%; transform: translateY(-50%); right: 10px;">
                                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                             </button>
                                         </div>
@@ -135,56 +135,83 @@
     <hr style="border: 2px solid #00b3ff; width: 8%; margin-top: 1px; margin-left: auto; margin-right: auto;">
 </div>
 
-<div id="carouselProjetos" class="carousel slide mb-4 mb-5" data-bs-ride="carousel"> <!-- mb-5 adicionada para aumentar o espaçamento -->
-    <div class="carousel-inner text-center">
-        <div class="carousel-item active">
-            <img src="./img/igor1.jpg" class="d-block mx-auto" style="height: 500px; width: auto; border-radius: 15px;">
-        </div>
-        <div class="carousel-item">
-            <img src="./img/igor2.jpg" class="d-block mx-auto" style="height: 500px; width: auto; border-radius: 15px;">
-        </div>
-        <div class="carousel-item">
-            <img src="./img/igor3.jpg" class="d-block mx-auto" style="height: 500px; width: auto; border-radius: 15px;">
-        </div>
-        <div class="carousel-item">
-            <img src="./img/igor4.jpg" class="d-block mx-auto" style="height: 500px; width: auto; border-radius: 15px;">
+
+<main class="mb-5" style="background-color: white; padding: 40px 0; border-radius: 0px 0px 70px 70px;">
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <!-- Cards -->
+            <div class="col-12 col-md-3 mb-4">
+                <a href="pagina1.html" style="display: block; position: relative; overflow: hidden; border-radius: 15px;">
+                    <div class="card" style="border-radius: 15px; position: relative; overflow: hidden; transition: transform 0.3s ease;">
+                        <img src="./img/igor1.jpg" class="card-img-top" alt="Imagem 1" style="width: 100%; height: 350px; object-fit: cover; transition: transform 0.3s ease;">
+                        <div class="card-body" style="position: absolute; bottom: 10px; left: 10px; right: 10px; color: white; background-color: transparent; border-radius: 10px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                            <h5 class="card-title" style="text-align: center;">Título 1</h5>
+                            <p class="card-text" style="text-align: center;">Descrição do conteúdo 1.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-md-3 mb-4">
+                <a href="pagina2.html" style="display: block; position: relative; overflow: hidden; border-radius: 15px;">
+                    <div class="card" style="border-radius: 15px; position: relative; overflow: hidden; transition: transform 0.3s ease;">
+                        <img src="./img/igor2.jpg" class="card-img-top" alt="Imagem 2" style="width: 100%; height: 350px; object-fit: cover; transition: transform 0.3s ease;">
+                        <div class="card-body" style="position: absolute; bottom: 10px; left: 10px; right: 10px; color: white; background-color: transparent; border-radius: 10px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                            <h5 class="card-title" style="text-align: center;">Título 2</h5>
+                            <p class="card-text" style="text-align: center;">Descrição do conteúdo 2.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-md-3 mb-4">
+                <a href="pagina3.html" style="display: block; position: relative; overflow: hidden; border-radius: 15px;">
+                    <div class="card" style="border-radius: 15px; position: relative; overflow: hidden; transition: transform 0.3s ease;">
+                        <img src="./img/igor3.jpg" class="card-img-top" alt="Imagem 3" style="width: 100%; height: 350px; object-fit: cover; transition: transform 0.3s ease;">
+                        <div class="card-body" style="position: absolute; bottom: 10px; left: 10px; right: 10px; color: white; background-color: transparent; border-radius: 10px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                            <h5 class="card-title" style="text-align: center;">Título 3</h5>
+                            <p class="card-text" style="text-align: center;">Descrição do conteúdo 3.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-md-3 mb-4">
+                <a href="pagina4.html" style="display: block; position: relative; overflow: hidden; border-radius: 15px;">
+                    <div class="card" style="border-radius: 15px; position: relative; overflow: hidden; transition: transform 0.3s ease;">
+                        <img src="./img/igor4.jpg" class="card-img-top" alt="Imagem 4" style="width: 100%; height: 350px; object-fit: cover; transition: transform 0.3s ease;">
+                        <div class="card-body" style="position: absolute; bottom: 10px; left: 10px; right: 10px; color: white; background-color: transparent; border-radius: 10px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                            <h5 class="card-title" style="text-align: center;">Título 4</h5>
+                            <p class="card-text" style="text-align: center;">Descrição do conteúdo 4.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
-
-    <!-- Controles do Carrossel -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjetos" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" style="background-color: #007bff; border-radius: 50%; padding: 10px;"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselProjetos" data-bs-slide="next">
-        <span class="carousel-control-next-icon" style="background-color: #007bff; border-radius: 50%; padding: 10px;"></span>
-    </button>
-</div>
-
+</main>
 <!-- Botão para conhecer todos os projetos -->
-<div class="text-center mt-4 mb-4"> <!-- Adicionando mb-4 para aumentar o espaço abaixo do botão -->
-    <a href="#" class="btn btn-primary" style="background-color: #007bff; border-radius: 25px; padding: 10px 20px;">
+<div class="text-center mt-3 mb-5">
+    <a href="#" class="btn btn-primary" 
+       style="background-color: #007bff; border-radius: 25px; padding: 10px 20px;"
+       onmouseover="this.style.backgroundColor='#0056b3'" 
+       onmouseout="this.style.backgroundColor='#007bff'">
         Conhecer todos os nossos projetos
     </a>
 </div>
-</section>
 
-<section class="container-fluid" id="box-card1" style="margin-bottom: 40px; background-image: url('./img/igor4.jpg'); background-size: cover; background-position: center; position: relative; border-radius: 50px;">
+<section class="container-fluid" id="box-card1" style="margin-bottom: 40px; background-image: url('./img/igor4.jpg'); background-size: cover; background-position: center; position: relative; border-radius: 50px; padding: 80px 20px; min-height: 500px;">
     <!-- Camada de sobreposição com opacidade e tom vermelho -->
-    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(255, 128, 128, 0.5); border-radius: 50px 50px 50px 50px;"></div>
+    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(255, 128, 128, 0.5); border-radius: 50px;"></div>
     
-    <div class="row justify-content-center align-items-center" style="z-index: 1; position: relative; padding: 20px;">
+    <div class="row justify-content-center align-items-center" style="z-index: 1; position: relative; padding: 40px;">
         <!-- Coluna à esquerda -->
-        <div class="col-md-6" style="color: rgb(0, 0, 0); font-family: 'Roboto', sans-serif;">
-            <h1 style="font-weight: bold; font-size: 1.5rem;">Produtora Atado no Ato</h1>
-            <hr style="border: 2px solid #e90e0e; width: 15%; margin-top: 1px;">
-            <p class="mb-3" style="font-size: 0.7rem;">Criada em 2008 por capacitados na primeira turma das Oficinas Querô...</p>
-            <p class="mb-4" style="font-size: .7rem;">Criada em 2008 por capacitados na primeira turma das Oficinas Querô...</p>
+        <div class="col-md-6 text-center" style="color: rgb(0, 0, 0); font-family: 'Roboto', sans-serif;">
+            <h1 style="font-weight: bold; font-size: 2rem;">Produtora Atado no Ato</h1>
+            <hr style="border: 2px solid #e90e0e; width: 15%; margin: 1px auto;">
+            <p class="mb-3" style="font-size: 1rem;">Criada em 2008 por capacitados na primeira turma das Oficinas Querô...</p>
+            <p class="mb-4" style="font-size: 1rem;">Criada em 2008 por capacitados na primeira turma das Oficinas Querô...</p>
             <a href="#" class="btn btn-warning" style="border-radius: 25px;">Saiba Mais</a>
         </div>
-
-
-</section>
-                        
+    </div>
+</section>             
 
 
 <!-- Card 1 -->
@@ -261,7 +288,12 @@
         <p class="mb-0">&copy; 2024 Casa 160. Todos os direitos reservados.</p>
     </div>
     
-
+<!-- Botão Flutuante do WhatsApp -->
+<a href="https://wa.me/SEUNUMERO" target="_blank" class="whatsapp-float">
+    <img src="./img/—Pngtree—whatsapp icon whatsapp logo_3584844.png" alt="WhatsApp" class="whatsapp-icon">
+    <span class="whatsapp-text">Fale Conosco
+    </span>
+</a>
 
 
         <script src="./script.js"></script>

@@ -19,6 +19,13 @@ body, html {
 
 /* INICIO HEADER */
 
+.navbar-nav .nav-link:active,
+.navbar-nav .nav-link:focus {
+    color: white !important; /* Ou a cor padrão do texto */
+    background-color: transparent !important; /* Remove qualquer fundo que possa aparecer */
+    outline: none !important; /* Remove a borda de foco */
+}
+
 /* Fundo preto e letras brancas no dropdown */
 .dropdown-menu {
     background-color: black !important;
@@ -218,5 +225,60 @@ nav {
         color: white; /* Texto branco no hover */
     }
 
+    main a img:hover 
+ {
+            opacity: 0.7;
+            filter: brightnes(0.7);
+        }
+  
+        main a .card:hover img {
+            transform: scale(1.1); /* Zoom na imagem ao passar o mouse */
+            filter: brightness(0.9) saturate(1.1) hue-rotate(200deg);
+        }
     /* footer style */
 
+    .whatsapp-float {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #25d366;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+        width: 60px; /* Aumentado para melhor proporção */
+        height: 60px; /* Igual para manter circular */
+    }
+    
+    /* Ícone do WhatsApp */
+    .whatsapp-icon {
+        width: 40px; /* Aumentado para melhor preenchimento */
+        height: 40px;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    /* Texto inicial escondido */
+    .whatsapp-text {
+        white-space: nowrap;
+        opacity: 0;
+        transform: translateX(-20px);
+        transition: all 0.3s ease-in-out;
+    }
+    
+    /* Efeito ao passar o mouse */
+    .whatsapp-float:hover {
+        width: 200px; /* Expande o botão */
+        padding: 10px 20px;
+        justify-content: flex-start; /* Move o ícone para dar espaço ao texto */
+    }
+    
+    .whatsapp-float:hover .whatsapp-text {
+        opacity: 1;
+        transform: translateX(0);
+    }
