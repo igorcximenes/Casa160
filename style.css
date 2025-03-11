@@ -244,18 +244,19 @@ nav {
         border-radius: 50px;
         display: flex;
         align-items: center;
+        justify-content: center;
         text-decoration: none;
         transition: all 0.3s ease-in-out;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
         overflow: hidden;
-        width: 60px; /* Aumentado para melhor proporção */
-        height: 60px; /* Igual para manter circular */
+        width: 40px; /* Aumentado para melhor proporção */
+        height: 40px; /* Igual para manter circular */
     }
     
     /* Ícone do WhatsApp */
     .whatsapp-icon {
-        width: 40px; /* Aumentado para melhor preenchimento */
-        height: 40px;
+        width: 30px; /* Aumentado para melhor preenchimento */
+        height: 30px;
         transition: all 0.3s ease-in-out;
     }
     
