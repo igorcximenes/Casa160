@@ -207,32 +207,117 @@ nav {
     }
 }
 
-/* botao do primeiro carroussel */
-
-
-
-    h1#text-1 {
-        font-size: 25px;
-        background-color: #00ce33; /* Cor de fundo cinza */
-        padding: 5px 15px; /* Espaçamento interno */
-        color: white;
-        display: inline-block; /* Faz com que o fundo siga apenas o tamanho do texto */
-        transition: background-color 0.3s ease, color 0.3s ease; /* Suaviza a transição */
-    }
-       /* Efeito Hover */
-       h1#text-1:hover {
-        background-color: #009420; /* Cinza mais escuro no hover */
-        color: white; /* Texto branco no hover */
+@media (max-width: 768px) {
+    /* Garante que o main não fique muito largo */
+    main {
+        padding: 20px 10px;
+        border-radius: 0 0 40px 40px;
     }
 
+    /* Ajusta o título e a descrição */
+    #carouselTitle {
+        font-size: 1.2rem;
+    }
 
-  
-        main a .card:hover img {
-            transform: scale(1.1); /* Zoom na imagem ao passar o mouse */
-            filter: brightness(0.9) saturate(1.1) hue-rotate(200deg);
-        }
-    /* footer style */
+    #carouselDescription {
+        font-size: 0.9rem;
+    }
 
+    /* Define layout de coluna única para telas menores */
+    .carousel-item .row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Ajusta o tamanho das imagens */
+    .carousel-item .col-8, .carousel-item .col-4 {
+        width: 100%;
+        padding: 5px;
+    }
+
+    /* Imagem grande ocupa toda a largura */
+    .carousel-item .col-8 img {
+        width: 90%;
+        height: auto;
+        border-radius: 30px;
+    }
+
+    /* As imagens menores são redimensionadas */
+    .carousel-item .col-4 img {
+        width: 70%;
+        height: auto;
+        margin: 5px auto;
+    }
+
+    /* Ajusta os botões do carrossel */
+    .carousel-control-prev, .carousel-control-next {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Reduz o tamanho das imagens para dispositivos muito pequenos */
+    .carousel-item .col-8 img {
+        width: 80%;
+    }
+
+    .carousel-item .col-4 img {
+        width: 60%;
+    }
+
+    /* Ajusta o botão "Saiba Mais" */
+    #saibaMais {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+}
+
+
+/* transição de cor do background do primeiro carroussel da homepage */
+.carousel-background-1 {
+    transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+/* card 2 hover azul */
+
+    main a .card:hover img {
+        transform: scale(1.1); /* Zoom na imagem ao passar o mouse */
+        filter: brightness(0.9) saturate(1.1) hue-rotate(200deg);
+    }
+
+    
+        /* footer style */
+
+
+    .contato-link {
+        text-decoration: none;
+        color: white; /* Cor padrão */
+        transition: color 0.3s ease-in-out;
+    }
+    
+    .contato-link.endereco:hover {
+        color: yellow;
+    }
+    
+    .contato-link.whatsapp:hover {
+        color: green;
+    }
+    
+    .contato-link.email:hover {
+        color: red;
+    }
+    
+    .contato-link.instagram:hover {
+        color: blue;
+    }
+
+
+
+
+    /* Botão flutuante de Whatsapp  */
     .whatsapp-float {
         position: fixed;
         bottom: 20px;
@@ -244,7 +329,6 @@ nav {
         border-radius: 50px;
         display: flex;
         align-items: center;
-        justify-content: center;
         text-decoration: none;
         transition: all 0.3s ease-in-out;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
