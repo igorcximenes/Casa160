@@ -46,11 +46,11 @@ const buttonColors = [
 
 // Lista de âncoras para cada slide
 const buttonAnchors = [
-    "./index.html",    
-    "./atadoNoAto160.html",  
-    "./empreenderNaCozinha160.html",  
-    "./desenheitudo160.html", 
-    "./estudio160.html"  
+    "./quemsomos-Acasa.html",    
+    "./quemsomos-atado.html",  
+    "./quemSomos-empreender.html",  
+    "./quemsomos-desenhei.html", 
+    "./quemsomos-Estudio.html"  
 ];
 
 // Adiciona transições para o título e a descrição
@@ -109,3 +109,6 @@ carouselElement.addEventListener('slid.bs.carousel', function(event) {
 document.addEventListener("DOMContentLoaded", function() {
     updateStyles(0);
 });
+
+
+
